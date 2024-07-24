@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buble</title>
+</head>
+<body>
+    <div id="container">
+        <h1>My list</h1>
+        <ul id="mylist">
+            <li id="first" class="item">Lorem ipsum dolor sit amet.</li>
+            <li class="item">Accusanti.</li>
+            <li class="item">Maxime distinc</li>
+            <li class="item">idunt dissimos? Ea!</li>
+            <li class="item">Natus voluptate</li>
+        </ul>
+        <button id="addNew">add me</button>
+    </div>
+    <script>
+        document.getElementById('addNew').addEventListener('click', function(event){
+            const newParent= document.getElementById('mylist');
+            const newItem = document.createElement('li')
+            newItem.innerText='new item added';
+            newParent.appendChild(newItem);
+        })
+        document.getElementById('mylist').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+  
+
+
+
+        // document.getElementById('mylist').addEventListener('click', function(event){
+        //  event.target.parentNode.removeChild(event.target);
+        // })
+        // document.getElementById('addNew').addEventListener('click', function(event){
+        //     var itemParent=document.getElementById('mylist');
+        //     var newItem= document.createElement('li');
+        //     newItem.innerText='New item added successfully';
+        //     itemParent.appendChild(newItem);
+        // })
+        // document.getElementById('addNew').addEventListener('click', function(event){
+        //     var itemParent = document.getElementById('mylist');
+        //     var newItem= document.createElement('li');
+        //     newItem.innerText= 'brand New Item';
+        //     itemParent.appendChild(newItem);
+        // })
+        
+      
+
+
+
+
+
+
+
+
+
+
+        // const items= document.getElementsByClassName('item');
+        // for (let i  = 0; i  < items.length; i ++) {
+        //     const item = items[i];
+        //     item.addEventListener('click', function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })           
+        // }
+ // thiscode start
+        // document.getElementById('addNew').addEventListener('click', function(event){
+        //     var itemParent = document.getElementById('mylist');
+        //     var newItem= document.createElement('li');
+        //     newItem.innerText= 'brand New Item';
+        //     itemParent.appendChild(newItem);
+        // })
+        
+// thiscode end
+        // var items =document.getElementsByClassName('item');
+        // for (let i = 0; i < items.length; i++) {
+        //     const item = items[i];
+        //     item.addEventListener('click', function(event){
+        //        event.target.parentNode.removeChild(event.target);
+        //     })
+            
+        // }
+
+        // document.getElementById('first').addEventListener('click', function(event){
+        //     console.log('click first item');
+        //    event.stopImmediatePropagation();
+        // } ) 
+// thiscode start
+        // document.getElementById('mylist').addEventListener('click', function(event){
+        //     // console.log( this, event.target);
+        //     event.target.parentNode.removeChild(event.target)
+        // } ) 
+ // thiscode end
+        // document.getElementById('container').addEventListener('click', function(event){
+        //     console.log('click container item');
+        // } ) 
+    </script>
+</body>
+</html>
